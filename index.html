@@ -14,7 +14,7 @@
     
     <script>
       function getText() {
-        var x = String.raw(document.getElementById("in").value);
+        var x = document.getElementById("in").value;
         document.getElementById("out").innerHTML = x;
       }
       setInterval(getText, 50);
