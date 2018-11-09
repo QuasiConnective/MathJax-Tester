@@ -16,14 +16,14 @@
       function getText() {
         var x = document.getElementById("in").value;
         document.getElementById("out").innerHTML = x;
-        MathJax.Hub.Queue(["Typeset",MathJax.Hub,'out']);
+        return MathJax.Hub.Typeset("out");
       }
     </script>
   </head>
   <body>
     <input id="in" type="text"
     <div lang="latex" id="out"></div>
-    <button onClick="getText()">UPDATE</button>
+    <button onClick="MathJax.Hub.Queue(getText)">UPDATE</button>
     <p>$\omega$</p>
   </body>
 </html>
