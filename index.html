@@ -18,11 +18,10 @@
         document.getElementById("out").innerHTML = x;
         MathJax.Hub.Queue(["Typeset",MathJax.Hub,'out']);
       }
-      setInterval(getText, 50);
     </script>
   </head>
   <body>
-    <input id="in" type="text">
+    <input id="in" type="text"> <button onClick="getText">UPDATE</button>
     <p lang="latex" id="out"></p>
     <p>$\omega$</p>
   </body>
