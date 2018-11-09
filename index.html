@@ -16,6 +16,7 @@
       function getText() {
         var x = document.getElementById("in").value;
         document.getElementById("out").innerHTML = x;
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub,'out']);
       }
       setInterval(getText, 50);
     </script>
