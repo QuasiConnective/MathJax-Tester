@@ -4,8 +4,23 @@
     <script type="text/javascript" async
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    
     <title>MathJax Tester</title>
+    
+    <script>
+      function getText() {
+        var x = document.getElementById("in").value;
+        document.getElementById("out").innerHTML = x;
+      }
+    </script>
   </head>
   <body>
+    <input id="in" type="text">
+    <p id="out"></p>
   </body>
 </html>
